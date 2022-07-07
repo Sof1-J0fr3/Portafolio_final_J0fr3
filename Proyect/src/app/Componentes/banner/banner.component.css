@@ -1,19 +1,20 @@
 *{
-  background:linear-gradient(-55deg,rgba(82, 82, 82, 0.807), rgb(180, 66, 66));
+  background:linear-gradient(-50deg,rgb(64, 64, 64), rgb(236, 78,78));
     color: #fff;
     position: relative;
   
 }
 img{
     width: 450px;
-    height: 500px;
+    height: 465px;
     position: inherit;
-    text-align: center;
+    text-align: left;
 }
 .col h2{
   color:rgb(205, 203, 203) ;
   padding-top: 40%;
   background-color: transparent;
+  
 }
 .col h1{
   color:rgb(205, 203, 203) ;
@@ -26,8 +27,8 @@ img{
   font-size: 20px;
 }
 .row img{
+
   background-color:transparent;
- padding-left: 7%;
+ padding-left: 4%;
  padding-top: 10%;
- 
 }

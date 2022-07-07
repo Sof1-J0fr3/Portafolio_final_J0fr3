@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module.ts.module';
-import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './Componentes/header/header.component';
 import { LogoAPComponent } from './Componentes/logo-ap/logo-ap.component';
 import { RedesComponent } from './Componentes/redes/redes.component';
@@ -13,29 +11,24 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SkillsComponent } from './Componentes/skills/skills.component';
 import { ProyectosComponent } from './Componentes/proyectos/proyectos.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
+const routes: Routes = [
+  {path:'header', component:HeaderComponent},
+  {path:'logo', component:LogoAPComponent},
+  {path:'redes', component:RedesComponent},
+  {path:'banner', component:BannerComponent},
+  {path:'mis-datos', component:DatosPersonalesComponent},
+  {path:'mi-experiencia', component:ExperienceComponent},
+  {path:'mi-educación', component:EducationComponent},
+  {path:'graficos-circulares', component:NgCircleProgressModule},
+  {path:'H&S-skills', component:SkillsComponent},
+  {path:'mis-proyectos', component:ProyectosComponent},
+  {path:'footer', component:FooterComponent},
 
-
+];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    LogoAPComponent,
-    RedesComponent,
-    BannerComponent,
-    DatosPersonalesComponent,
-    ExperienceComponent,
-    EducationComponent,
-    SkillsComponent,
-    ProyectosComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class AppRoutingModule { }
+

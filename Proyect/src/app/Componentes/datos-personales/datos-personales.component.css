@@ -1,0 +1,28 @@
+.row{
+    background-color: black;
+    color: rgb(205, 198, 198);    
+}
+div h1{
+    font-size: 35px;
+    padding-top: 6%;
+}
+div h2{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-top: 5%;
+    margin-top: 20%;
+
+}
+.par{
+
+text-align: center;
+}
+div p{
+    font-size:18px;
+}
+div img{
+    margin-top: 10%;
+    border-radius: 2%;
+    text-align: center;
+}

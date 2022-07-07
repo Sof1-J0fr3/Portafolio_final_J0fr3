@@ -1,0 +1,10 @@
+div{
+    background:linear-gradient(-50deg,rgb(131, 131, 131), rgb(236, 78,78));
+}
+div h1{
+    font-size: 60px;
+    text-align: center;
+    background-color: rgba(64, 64, 64, 0.498);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
