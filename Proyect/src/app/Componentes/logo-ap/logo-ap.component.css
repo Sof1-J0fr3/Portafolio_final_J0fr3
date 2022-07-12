@@ -1,7 +1,18 @@
-#logo_ap{
+.Logo-AP {
     width: 230px;
-    height: 150px;
+    height:150px;
     
 }
+.Logos_R{
+    width: 50px;
+    height:50px;
+    display:right;
+    background-color: rgb(255, 255, 255);
+    border-radius: 60px;
+    border-bottom: 5px;
+   float:right;
+}
 
- 
+.navbar-brand{
+    color: rgb(169, 169, 169);
+}
